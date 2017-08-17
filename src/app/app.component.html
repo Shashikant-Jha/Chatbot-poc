@@ -1,0 +1,14 @@
+<button type="button" class="btn fab-btn" (click)="showChatWindow()">
+  <span class="fa fa-comments-o"></span>
+</button>
+
+<div class="chat-window" id="chat">
+    <div class="chat-area" #chatArea></div>
+    <textarea class="form-control" [(ngModel)]="text" name="text" (keyup.enter)="this.onSubmit(text)" placeholder="Speak or Write something here..." autofocus></textarea>
+</div>
+
+<!-- <ng-container *ngFor="let payloadValue of PayLoad">
+    <ul>
+        <li>{{payloadValue.Key}}</li>
+    </ul>
+</ng-container> -->
